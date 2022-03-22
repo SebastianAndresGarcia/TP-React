@@ -38,7 +38,7 @@ class Home extends Component {
                 <Navigation></Navigation>
                 <Pila></Pila>
                 <Container fluid="md">
-                    {instrumentos} {/* contiene todas las */}
+                    {instrumentos} {/* contiene todas las tarjetas*/}
                     
                 </Container>
                 
