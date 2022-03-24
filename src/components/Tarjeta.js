@@ -8,14 +8,17 @@ class Tarjeta extends Component {
     render() {
         return (
             <React.Fragment>
+                <br/>
                 <Container className="d-flex justify-content-center mt-8">
-                    <Card style={{ width: '40rem' }} className="margenesTarjeta">
+                    
+                    <Card style={{ width: '35rem' }} className="margenesTarjeta">
+                        
                         <Row>
                             <Col>
-                               <Button href={`/detalleinstrumento/${this.props.id}`}> <Card.Img variant="top" className="maxAltoImg" src={
+                               <a href={`/detalleinstrumento/${this.props.id}`}> <Card.Img variant="top" className="maxAltoImg" src={
                                     require(`../assets/images/${this.props.imagen}`)
                                 }
-                                /></Button>
+                                /></a>
                             </Col>
                             <Col className="md-12">
                                 <Card.Body>
@@ -26,7 +29,7 @@ class Tarjeta extends Component {
                                     <Card.Text>
                                         ${this.props.precio}<br>
                                         </br>
-                                        Costo de Envío {this.props.costoenvio==='G'?" Gratis a todo el país":("$"+this.props.costoenvio)}
+                                        {this.props.costoenvio==='G'?"Envío gratis a todo el país":("Costo de Envío $"+this.props.costoenvio)}
                                         <br></br>
                                         Vendidos {this.props.cantidadvendida}
                                     </Card.Text>
@@ -35,7 +38,9 @@ class Tarjeta extends Component {
                             </Col>
                         </Row>
                     </Card>
+                    
                 </Container>
+                
             </React.Fragment>
             
         );

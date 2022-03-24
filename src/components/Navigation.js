@@ -11,16 +11,13 @@ class Navigation extends Component {
     return (
       <React.Fragment>
         <Navbar bg="primary" variant="dark">
-          <Navbar.Brand href="/home">INICIO</Navbar.Brand>
+          <Navbar.Brand href="/home">HOME</Navbar.Brand>
           <Nav className="mr-auto">
-            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/Productos">PRODUCTOS</Nav.Link>
             
           </Nav>
-
-          <Form className="d-flex">
-            <FormControl type="search" placeholder="Search" className="mr-sm-2" aria-label="Search"/>
-            <Button variant="outline-light">Search</Button>
-          </Form>
+          
+          
         </Navbar>
       </React.Fragment>
 
