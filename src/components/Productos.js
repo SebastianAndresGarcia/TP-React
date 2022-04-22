@@ -3,7 +3,7 @@ import Navigation from './Navigation';
 import instrumentos from "../datos/instrumentos.json";
 import Container from 'react-bootstrap/Container';
 import Tarjeta from "./Tarjeta";
-class Productos extends Component{
+class Productos extends Component {
     constructor() {
         super();
         this.state = { //todos los componentes tienen un estado, le asigno los instrumentos del json, cuando yo llame a Home, la pantalla ya tendrá dentro de si el json
@@ -29,7 +29,7 @@ class Productos extends Component{
                 ></Tarjeta>
             )
         })
-        
+
         return ( //esto es lo que se manda a la pantalla
             <React.Fragment>
                 <Navigation></Navigation>
@@ -37,7 +37,7 @@ class Productos extends Component{
                 <Container fluid="md">
                     {instrumentos} {/* contiene todas las tarjetas*/}
                 </Container>
-                
+
             </React.Fragment>
         );
 
